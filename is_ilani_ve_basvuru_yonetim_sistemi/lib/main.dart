@@ -208,7 +208,7 @@ class _SignInPageState extends State<SignInPage> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            // Başlık
+            
             Text(
               _isSignUp ? 'Kayıt Ol' : 'Giriş Yap',
               style: Theme.of(context).textTheme.headlineSmall,
@@ -243,7 +243,7 @@ class _SignInPageState extends State<SignInPage> {
             ),
             const SizedBox(height: 16),
 
-            // Rol seçimi (sadece kayıt sayfasında göster)
+           
             if (_isSignUp)
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -291,7 +291,6 @@ class _SignInPageState extends State<SignInPage> {
               ),
             const SizedBox(height: 16),
 
-            // Kayıt/Giriş Yap butonu
             ElevatedButton(
               onPressed: _isLoading
                   ? null
@@ -308,7 +307,7 @@ class _SignInPageState extends State<SignInPage> {
             ),
             const SizedBox(height: 16),
 
-            // Geçiş linki
+            
             TextButton(
               onPressed: () {
                 setState(() {
